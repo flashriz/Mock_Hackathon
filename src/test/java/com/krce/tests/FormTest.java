@@ -41,16 +41,12 @@ public class FormTest extends BaseTest {
         Assert.assertTrue(form.successMessage());
         Assert.assertTrue(form.isGenderSelected());
         Assert.assertTrue(form.isHobbySelected());
+        driver.navigate().refresh();
     }
     @Test(priority = 2)
     public void emptyMandatoryFieldsTest(){
-
+        driver.get("https://demoqa.com/automation-practice-form");
         FormPage form = new FormPage(driver);
-
-        form.clickForm();
-
-        form.clickPractiseForm();
-
         form.submit();
 
         Assert.assertFalse(form.successMessage());

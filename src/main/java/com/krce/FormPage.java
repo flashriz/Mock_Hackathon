@@ -32,11 +32,9 @@ public class FormPage {
         this.driver=driver;
     }
     public void clickForm(){
-        JavascriptExecutor js =
-                (JavascriptExecutor) driver;
+        JavascriptExecutor js = (JavascriptExecutor) driver;
 
-        js.executeScript(
-                "arguments[0].click();",
+        js.executeScript("arguments[0].click();",
                 driver.findElement(form)
         );
     }
@@ -103,8 +101,7 @@ public class FormPage {
                 .sendKeys(Keys.ENTER);
     }
     public void submit(){
-        JavascriptExecutor js =
-                (JavascriptExecutor) driver;
+        JavascriptExecutor js = (JavascriptExecutor) driver;
 
         js.executeScript(
                 "arguments[0].click();",
