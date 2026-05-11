@@ -1,4 +1,4 @@
-package com.krce.pages;
+package com.krce.tests;
 
 import com.krce.config.ConfigReader;
 import org.openqa.selenium.WebDriver;
@@ -24,7 +24,7 @@ public class BaseTest {
 
     @AfterTest
     public void tearDown(){
-        driver.quit();
+        //driver.quit();
     }
 
 }
