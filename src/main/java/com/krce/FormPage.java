@@ -111,7 +111,16 @@ public class FormPage {
                 driver.findElement(submit));
     }
     public boolean successMessage(){
-        return driver.findElement(successPopUp).isDisplayed();
+        try{
+
+            return driver.findElement(successPopUp)
+                    .isDisplayed();
+
+        } catch (Exception e){
+
+            return false;
+        }
+
     }
     public boolean isGenderSelected(){
 
