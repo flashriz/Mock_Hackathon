@@ -6,33 +6,38 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class WebTableTest extends BaseTest{
-    @Test
+    @Test(priority = 1)
     public void addRowTest(){
         WebTablePage table =
                 new WebTablePage(driver);
 
         table.openWebTables();
+
         table.addRecord();
 
-        Assert.assertTrue(table.isRecordAdded());
+        Assert.assertTrue(
+                table.isRecordAdded()
+        );
     }
-    @Test
+    @Test(priority = 2)
     public void searchRecordTest(){
 
         WebTablePage table =
                 new WebTablePage(driver);
 
         table.openWebTables();
-
+        table.addRecord();
         table.searchRecord();
 
-        Assert.assertTrue(table.isCorrectRecordDisplayed()
+        Assert.assertTrue(
+                table.isCorrectRecordDisplayed()
         );
     }
-    @Test
+    @Test(priority = 3)
     public void deleteRecordTest(){
 
-        WebTablePage table = new WebTablePage(driver);
+        WebTablePage table =
+                new WebTablePage(driver);
 
         table.openWebTables();
 
@@ -40,10 +45,11 @@ public class WebTableTest extends BaseTest{
 
         table.deleteRecord();
 
-        Assert.assertTrue(table.isRecordDeleted()
+        Assert.assertTrue(
+                table.isRecordDeleted()
         );
     }
-    @Test
+    @Test(priority = 4)
     public void paginationTest(){
 
         WebTablePage table =
@@ -53,6 +59,9 @@ public class WebTableTest extends BaseTest{
 
         table.changeRowsPerPage();
 
-        Assert.assertEquals(table.getRowsValue(), "Show 10");
+        Assert.assertEquals(
+                table.getRowsValue(),
+                "Show 10"
+        );
     }
 }

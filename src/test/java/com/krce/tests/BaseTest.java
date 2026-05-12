@@ -13,7 +13,7 @@ import java.time.Duration;
 
 public class BaseTest {
     ConfigReader config=new ConfigReader();
-    public WebDriver driver;
+    public static WebDriver driver;
     public WebDriverWait wait;
 
     @BeforeMethod
@@ -26,7 +26,7 @@ public class BaseTest {
 
     @AfterMethod
     public void tearDown(){
-        //driver.quit();
+        driver.quit();
     }
 
 }
