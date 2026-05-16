@@ -1,7 +1,8 @@
 package com.krce.tests;
 
-import com.krce.FormPage;
+import com.krce.page.FormPage;
 
+import com.krce.base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

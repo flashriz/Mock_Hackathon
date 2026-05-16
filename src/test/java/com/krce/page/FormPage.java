@@ -1,4 +1,4 @@
-package com.krce;
+package com.krce.page;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;

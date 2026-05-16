@@ -1,5 +1,6 @@
-package com.krce.tests;
+package com.krce.base;
 
+import com.aventstack.extentreports.ExtentReports;
 import com.krce.config.ConfigReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,8 +13,12 @@ import org.testng.annotations.BeforeTest;
 import java.time.Duration;
 
 public class BaseTest {
+    public static ExtentReports extent;
     ConfigReader config=new ConfigReader();
-    public static WebDriver driver;
+    private static WebDriver driver;
+    public static WebDriver getDriver() {
+        return driver;
+    }
     public WebDriverWait wait;
 
     @BeforeMethod

@@ -1,12 +1,11 @@
 package com.krce.tests;
 
-import com.krce.FramesPage;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import com.krce.page.FramesPage;
+import com.krce.base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class FramesTest extends BaseTest{
+public class FramesTest extends BaseTest {
     @Test
     public void iframeTest(){
 

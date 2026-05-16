@@ -1,6 +1,7 @@
 package com.krce.tests;
 
-import com.krce.WidgetsPage;
+import com.krce.page.WidgetsPage;
+import com.krce.base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

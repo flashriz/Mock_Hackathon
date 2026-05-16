@@ -1,7 +1,6 @@
 package com.krce.tests;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import com.krce.base.BaseTest;
 
 public class ScreenshotReport extends BaseTest {
 

@@ -1,11 +1,11 @@
 package com.krce.tests;
 
-import com.krce.AlertsWindowsPage;
-import org.openqa.selenium.WebDriver;
+import com.krce.page.AlertsWindowsPage;
+import com.krce.base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AlertsWindowsTest extends BaseTest{
+public class AlertsWindowsTest extends BaseTest {
     @Test
     public void simpleAlertTest(){
 

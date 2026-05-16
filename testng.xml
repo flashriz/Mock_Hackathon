@@ -1,0 +1,11 @@
+<suite name="Mock_Hackathon_Suite" verbose="1" parallel="false">
+    <!--  Register the listener globally for all tests in this suite  -->
+    <listeners>
+        <listener class-name="com.krce.listeners.TestListener"/>
+    </listeners>
+    <test name="Login Tests">
+        <classes>
+            <class name="com.krce.tests.LoginTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,11 +1,11 @@
 package com.krce.tests;
 
-import com.krce.WebTablePage;
-import org.openqa.selenium.WebDriver;
+import com.krce.page.WebTablePage;
+import com.krce.base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class WebTableTest extends BaseTest{
+public class WebTableTest extends BaseTest {
     @Test(priority = 1)
     public void addRowTest(){
         WebTablePage table =
